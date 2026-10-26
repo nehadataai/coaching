@@ -11,7 +11,7 @@
 <meta property="og:title" content="Neha Vaishnavi | Data and AI leader, career mentor">
 <meta property="og:description" content="Book a 90-minute one-on-one mentoring session on data, AI, leadership, and career growth.">
 <meta property="og:url" content="https://nehavaishnavi.com/">
-<meta property="og:image" content="https://nehavaishnavi.com/images/hero.jpg">
+<meta property="og:image" content="https://nehavaishnavi.com/hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <!--
   GOOGLE TAG MANAGER (later): paste your GTM head snippet here, as high in <head> as possible.
@@ -91,6 +91,7 @@ section{padding:clamp(52px,7vw,96px) 0}
 @media(max-width:860px){.two{grid-template-columns:1fr}}
 
 /* story */
+.story-photo{width:min(100%,340px);aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:12px;margin-top:28px}
 .story p{font-size:1.06rem}
 blockquote{margin:1.6em 0;padding:4px 0 4px 22px;border-left:4px solid var(--accent);font-size:1.4rem;font-weight:700;line-height:1.35;letter-spacing:-0.015em}
 
@@ -114,17 +115,12 @@ blockquote{margin:1.6em 0;padding:4px 0 4px 22px;border-left:4px solid var(--acc
 @media(max-width:760px){.steps{grid-template-columns:1fr}}
 
 /* gallery */
-.gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:210px;gap:14px;margin-top:30px}
-.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:12px;background:var(--line)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:12px;background:var(--line);aspect-ratio:4/5}
 .gallery img{width:100%;height:100%;object-fit:cover}
-.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 11px;font-size:.84rem;font-weight:600;color:#fff;background:linear-gradient(transparent,rgba(8,20,17,.8))}
-.ga{grid-column:span 4;grid-row:span 2}
-.gb{grid-column:span 2;grid-row:span 2}
-.gc,.gd,.ge{grid-column:span 2}
-@media(max-width:760px){
-  .gallery{grid-template-columns:1fr;grid-auto-rows:auto}
-  .gallery figure{grid-column:auto!important;grid-row:auto!important;aspect-ratio:4/3}
-}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 16px 13px;font-size:.88rem;font-weight:600;color:#fff;background:linear-gradient(transparent,rgba(8,20,17,.8))}
+@media(max-width:980px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.gallery{grid-template-columns:1fr}.gallery figure{aspect-ratio:4/3}}
 
 /* background */
 .facts{margin:0;display:grid;gap:0}
@@ -190,7 +186,7 @@ footer p{max-width:50em}
       </div>
     </div>
     <div class="portrait">
-      <img src="images/hero.jpg" alt="Neha Vaishnavi at a Google Cloud event, standing under a Data and AI sign">
+      <img src="hero.jpg" alt="Neha Vaishnavi smiling and adjusting her glasses in front of evening string lights" style="object-position:50% 28%">
     </div>
   </div>
 </div>
@@ -209,6 +205,7 @@ footer p{max-width:50em}
     <div>
       <h2>Technical depth, people first.</h2>
       <p class="muted">Engineer by training, strategist and leader by practice.</p>
+      <img class="story-photo" src="story.jpg" alt="Neha walking outdoors in a white shirt and trousers" loading="lazy">
     </div>
     <div class="story">
       <p>I came to Canada from India for a master's in engineering. I'll be honest: I didn't understand much of what I was learning at first. Python, MATLAB, C++, it was a lot. I still graduated with an 80+ average, and that taught me what matters most in any career: you can learn hard things from zero if you keep showing up.</p>
@@ -236,14 +233,13 @@ footer p{max-width:50em}
 
 <section id="community">
   <div class="wrap">
-    <h2>On stage, in the room, with the team</h2>
-    <p class="muted" style="max-width:38em">Beyond client work, I run culture and community: flash mobs, Diwali celebrations, hackathons, startup partnerships, and a warm welcome for every new analyst.</p>
+    <h2>Out in the field</h2>
+    <p class="muted" style="max-width:38em">I attend as many conferences as I can to keep learning. Beyond client work, I also run culture and community at my firm, from flash mobs and Diwali celebrations to hackathons and a warm welcome for every new analyst.</p>
     <div class="gallery">
-      <figure class="ga"><img src="images/flashmob.jpg" alt="Neha and teammates under falling confetti after a flash mob performance" loading="lazy"><figcaption>Flash mob finale in front of 700 colleagues</figcaption></figure>
-      <figure class="gb"><img src="images/googlecloud.jpg" alt="Neha holding a Google Cloud sign at a conference photo wall" loading="lazy" style="object-position:62% 30%"><figcaption>Google Cloud Next</figcaption></figure>
-      <figure class="gc"><img src="images/diwali.jpg" alt="Colleagues dancing at an office Diwali celebration" loading="lazy"><figcaption>Diwali at the office</figcaption></figure>
-      <figure class="gd"><img src="images/hackathon.jpg" alt="Group photo at the Sustainability and AI hackathon" loading="lazy"><figcaption>Sustainability and AI hackathon</figcaption></figure>
-      <figure class="ge"><img src="images/bay.jpg" alt="Neha with analysts on a boat with the San Francisco skyline behind" loading="lazy"><figcaption>Team day on the bay</figcaption></figure>
+      <figure><img src="dataai.jpg" alt="Neha standing under a Data and AI sign at a Google Cloud event" loading="lazy" style="object-position:50% 55%"><figcaption>Exploring Data and AI</figcaption></figure>
+      <figure><img src="googlecloud.jpg" alt="Neha holding a Google Cloud sign at a conference photo wall" loading="lazy" style="object-position:60% 30%"><figcaption>Google Cloud Next</figcaption></figure>
+      <figure><img src="tableau.jpg" alt="Neha at a conference booth about AI and Tableau" loading="lazy" style="object-position:50% 45%"><figcaption>Data and AI conferences</figcaption></figure>
+      <figure><img src="helicopter.jpg" alt="Neha standing next to a helicopter at an industry trade show" loading="lazy" style="object-position:60% 55%"><figcaption>Industry trade shows</figcaption></figure>
     </div>
   </div>
 </section>
